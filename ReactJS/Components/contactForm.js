@@ -1,16 +1,19 @@
 //Creating the contactForm Component
 
-function contactForm(props){
+function ContactForm(props){
     return (
-        <form onSubmit={props.submit} className={props.formClass} id={props.formId}>
-            <label for={props.nameInputId} className={props.nameLabelClass}>Name</label>
-            <input type="text" name="nameInput" id={props.nameInputId} className={props.nameInputClass} />
-            <label for={props.emailInputId} className={props.emailLabelClass}>Email</label>
-            <input type="email" name="emailInput" id={props.emailInputId} className={props.emailInputClass} />
-            <label for={props.subjectInputId} className={props.subjectLabelClass}>Subject</label>
-            <input type="text" name="subjectInput" id={props.subjectInputId} className={props.subjectInputClass} />
-            <label for={props.messageInputId} className={props.messageLabelClass}>Message</label>
-            <input type="text" name="messageInput" id={props.messageInputId} className={props.messageInputClass} />
+        <form onSubmit={props.submit} className={props.formclass} id={props.formid}>
+            <label for={props.nameinputid} className={props.namelabelClass}>Name</label>
+            <input type="text" name="nameinput" id={props.nameinputid} className={props.nameinputclass} />
+            <label for={props.emailinputid} className={props.emaillabelclass}>Email</label>
+            <input type="email" name="emailinput" id={props.emailinputid} className={props.emailinputclass} />
+            <label for={props.subjectinputid} className={props.subjectlabelclass}>Subject</label>
+            <input type="text" name="subjectinput" id={props.subjectinputid} className={props.subjectinputclass} />
+            <label for={props.messageinputid} className={props.messagelabelclass}>Message</label>
+            <input type="text" name="messageinput" id={props.messageinputid} className={props.messageinputclass} />
+            <input type="submit" className={props.submitbtnclass} id={props.submitbtnid}/>
         </form>
     )
 }
+
+export default ContactForm
